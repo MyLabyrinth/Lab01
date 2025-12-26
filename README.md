@@ -1,7 +1,5 @@
 # **Lab 01: Hello, World\!**
 
-### Lab Assignment Link: [https://classroom.github.com/a/CbahooZ2](https://classroom.github.com/a/CbahooZ2)
-
 ### **Task 1: Install Visual Studio Code Coding Pack for Java**
 
 1. Download and install the "Coding Pack for Java" for Visual Studio Code. You can find the installer here: [https://code.visualstudio.com/docs/languages/java\#\_install-visual-studio-code-for-java](https://code.visualstudio.com/docs/languages/java#_install-visual-studio-code-for-java).  
