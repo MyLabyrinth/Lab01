@@ -11,18 +11,16 @@ public class Lab01Test {
 
     @Before
     public void setUpStreams() {
-        // Redirect System.out to capture program output
         System.setOut(new PrintStream(outContent));
     }
 
     @After
     public void restoreStreams() {
-        // Restore System.out after the test
         System.setOut(originalOut);
     }
 
     @Test
-    public void testTask2HelloWorld() {
+    public void testTask2() {
         Lab01.main(new String[]{});
         String output = outContent.toString();
         assertTrue("Task 2 Failed: Output must contain 'Hello, World!'", 
@@ -30,24 +28,22 @@ public class Lab01Test {
     }
 
     @Test
-    public void testTask3ProfessorNames() {
+    public void testTask3() {
         Lab01.main(new String[]{});
         String output = outContent.toString();
-        assertTrue("Task 3 Failed: Missing 'Professor'", output.contains("Professor"));
-        assertTrue("Task 3 Failed: Missing 'Professor Sarah'", output.contains("Professor Sarah"));
-        assertTrue("Task 3 Failed: Missing 'Professor Lin'", output.contains("Professor Lin"));
+        assertTrue("Missing 'Professor'", output.contains("Professor"));
+        assertTrue("Missing 'Professor Sarah'", output.contains("Professor Sarah"));
+        assertTrue("Missing 'Professor Lin'", output.contains("Professor Lin"));
     }
 
     @Test
-    public void testTask4RightTriangle() {
+    public void testTask4() {
         Lab01.main(new String[]{});
-        // Normalize line endings for Windows/Linux compatibility
         String output = outContent.toString().replace("\r\n", "\n"); 
-        
-        assertTrue("Task 4 Failed: Row 1 (*) missing", output.contains("*"));
-        assertTrue("Task 4 Failed: Row 2 (**) missing", output.contains("**"));
-        assertTrue("Task 4 Failed: Row 3 (***) missing", output.contains("***"));
-        assertTrue("Task 4 Failed: Row 4 (****) missing", output.contains("****"));
-        assertTrue("Task 4 Failed: Row 5 (*****) missing", output.contains("*****"));
+        assertTrue("Row 1 (*) missing", output.contains("*"));
+        assertTrue("Row 2 (**) missing", output.contains("**"));
+        assertTrue("Row 3 (***) missing", output.contains("***"));
+        assertTrue("Row 4 (****) missing", output.contains("****"));
+        assertTrue("Row 5 (*****) missing", output.contains("*****"));
     }
 }
