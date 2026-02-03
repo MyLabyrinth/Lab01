@@ -4,24 +4,7 @@
 
 1. Download and install the "Coding Pack for Java" for Visual Studio Code. You can find the installer here: [https://code.visualstudio.com/docs/languages/java\#\_install-visual-studio-code-for-java](https://code.visualstudio.com/docs/languages/java#_install-visual-studio-code-for-java).  
    * *Note: You are also welcome to use Eclipse if you prefer.*  
-2. In your "Documents" or "Home" folder, create a new folder named CS122.  
-3. Open Visual Studio Code, go to File \-\> Open Folder, and select your CS122 folder.  
-4. Create a new file and name it exactly Lab01.java.
-
-5. Enter the following starting code. The class name Lab01 must match the file name.  
-   public class Lab01 {  
-       public static void main(String\[\] args) {
-
-       }  
-   }
-
-6. **Configure Settings:** To avoid confusion, it is recommended to turn off inlay hints and the code lens.  
-   * Open settings:  
-     * **Mac:** Code \-\> Settings \-\> Settings  
-     * **Windows:** File \-\> Settings \-\> Settings  
-   * Search for inlay and set it to off.  
-   * Search for lens and uncheck the "Enable Run Debug Code Lens" box.
-
+2. Install Github Desktop here: [https://desktop.github.com/download/](https://desktop.github.com/download/)
 ### 
 
 ### 
